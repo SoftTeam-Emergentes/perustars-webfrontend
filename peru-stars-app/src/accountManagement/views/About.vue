@@ -1,20 +1,13 @@
 <template>
-
-  <header>
-    <tool-bar></tool-bar>
-  </header>
-
   <body>
+  <div class="img d-flex justify-center mb-6 bg-surface-variant flex-column ">
 
-  <div class="cover">
-    <div class="img"></div>
-    <div class="center">
-      <div class="title text-h2">Hay un artista en tu interior</div>
-      <br>
-      <br>
-      <div class="sub_title">Descúbrelo</div>
-    </div>
+    <div class="text-h2 font-weight-black">Hay un artista en tu interior</div>
+    <br>
+    <br>
+    <div class="sub_title text-h3">Descúbrelo</div>
   </div>
+
   <div class="purpose" id="purpose_tag">
     <h4 class="default-h4">Nuestro Propósito</h4>
     <div class="section_purpose">
@@ -43,7 +36,10 @@
     </div>
   </div>
 
-  <div class="spacing"><hr></div>
+  <div class="spacing">
+    <hr>
+  </div>
+
 
   <div class="benefits" id="benefits_tag">
     <h4 class="default-h4">Únete ahora y ...</h4>
@@ -62,7 +58,7 @@
       <div class="img_benefits_amateurs"></div>
       <div class="section_benefits_amateurs">
         <ul>
-          <li><i class="fas fa-check"></i> Descubre artistas, proyectos, eventos y más... </li>
+          <li><i class="fas fa-check"></i> Descubre artistas, proyectos, eventos y más...</li>
           <li><i class="fas fa-check"></i> Sigue a tus artistas favoritos.</li>
           <li><i class="fas fa-check"></i> Arma tu calendario de eventos.</li>
         </ul>
@@ -70,7 +66,9 @@
     </div>
   </div>
 
-  <div class="spacing"><hr></div>
+  <div class="spacing">
+    <hr>
+  </div>
 
   <div class="registration" id="registration_tag">
     <h4 class="default-h4">Regístrate Gratis</h4>
@@ -94,14 +92,15 @@
         Copyright © 2021 UX-Team
       </div>
       <div class="section_socialmedia">
-    <!--<a href= "https://facebook.com" target="_blank"><i class="fab fa-facebook-f facebook"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram instagram"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter twitter"></i></a>-->
+        <!--<a href= "https://facebook.com" target="_blank"><i class="fab fa-facebook-f facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter twitter"></i></a>-->
         <v-btn text-color="white" to="/terms&conditions">Términos y condiciones</v-btn>
-<!--        <terms-and-conditions dialogValue="dialogValue"></terms-and-conditions>-->
+        <!--        <terms-and-conditions dialogValue="dialogValue"></terms-and-conditions>-->
       </div>
     </div>
   </footer>
+
 
   </body>
 
@@ -109,15 +108,14 @@
 
 <script>
 /*import TermsAndConditions from '../components/terms-and-conditions'*/
-import ToolBar from "@/shared/components/tool-bar.vue";
+
 
 export default {
   name: "about-view",
-  components:{
-    ToolBar
+  components: {
     /*TermsAndConditions*/
   },
-  data () {
+  data() {
     return {
       dialogValue: false,
     }
@@ -130,178 +128,105 @@ export default {
 
 <style scoped>
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
-.default-h4{
+
+.default-h4 {
   text-align: center;
   font-size: 45px;
   font-weight: 600;
   margin-bottom: 80px;
 }
-.default-h5{
+
+.default-h5 {
   font-size: 20px;
   text-align: center;
 }
-.section-icon{
+
+.section-icon {
   font-size: 50px;
   color: black;
 }
 
-.default-p{
+.default-p {
   text-align: center;
   font-size: 15px;
   word-spacing: 0.25em;
 }
-.spacing{
+
+.spacing {
   display: flex;
   justify-content: center;
 }
-hr{
+
+hr {
   width: 60%;
   justify-content: center;
   color: rgb(214, 207, 207);
   box-shadow: 0px 0px 1px rgb(204, 204, 204);
 }
 
-/*Navbar*/
-nav{
-  position: fixed;
-  background: #fff;
-  width: 100%;
-  padding: 12px 0;
-  z-index: 12;
-  box-shadow: 0px 0px 3px rgb(110, 110, 110);
-}
-nav .menu{
-  max-width: 1250px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-.menu .logo a{
-  text-decoration: none;
-  color: #ce1212;
-  font-size: 35px;
-  font-weight: 600;
-}
-.menu ul{
-  display: inline-flex;
-}
-.menu ul li{
-  list-style: none;
-  margin-left: 7px;
-}
-.menu ul li:first-child{
-  margin-left: 0px;
-}
-.menu ul li a{
-  text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: all 0.1s ease;
-}
-.menu ul li a:hover{
-  font-size: 17px;
-  font-weight: 500;
-}
-
-/* Navbar Buttons*/
-nav .menu-btn i{
-  color: #ce1212;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"]{
-  display: none;
-}
 
 /* Cover Page*/
-.img{
+.img {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/cover_page.jpg')no-repeat;*/
-  background: url("../../assets/img/cover_page.jpg")no-repeat;
+  background: url("../../assets/img/cover_page.jpg") no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-
+  align-items: center;
+  align-items: center;
+  z-index: 1;
 }
 
-.img::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.center{
-  position: absolute;
-  top: 350px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
-}
-.center .title{
-  color: #fff;
-  font-weight: 600;
-}
-.center .sub_title{
-  color: #fff;
-  font-size: 52px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.btns button:hover{
+.btns button:hover {
   background: white;
   color: black;
 }
 
 /* Purpose*/
-.purpose{
+.purpose {
   padding-top: 6%;
   height: 150vh;
   padding: 70px;
 }
-.section_purpose{
+
+.section_purpose {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 10%;
-  box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.71);
+  box-shadow: 5px 6px 10px 1px rgba(0, 0, 0, 0.71);
 }
-.square{
+
+.square {
   padding: 0 30px;
   background: rgba(45, 159, 212, 0.068);
 }
 
 /* artists purpose*/
-.section_purpose .artists{
+.section_purpose .artists {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.img_artists{
+
+.img_artists {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/painting.jpg')no-repeat;*/
-  background: url("../../assets/img/painting.jpg")no-repeat;
-  opacity: 0.9;
+  background: url("../../assets/img/painting.jpg") no-repeat;
+
   width: 100%;
   background-size: 100% 100%;
   height: 350px;
 }
-.section_artists{
+
+.section_artists {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -310,19 +235,21 @@ input[type="checkbox"]{
 }
 
 /* amateurs purpose*/
-.section_purpose .amateurs{
+.section_purpose .amateurs {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.img_amateurs{
+
+.img_amateurs {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/amateur.jpg')no-repeat;*/
-  background: url("../../assets/img/amateur.jpg")no-repeat;
-  opacity: 0.9;
+  background: url("../../assets/img/amateur.jpg") no-repeat;
+
   width: 100%;
   background-size: 100% 100%;
   height: 350px;
 }
-.section_amateurs{
+
+.section_amateurs {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -331,7 +258,7 @@ input[type="checkbox"]{
 }
 
 /* Benefits */
-.benefits{
+.benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,37 +267,42 @@ input[type="checkbox"]{
 }
 
 /* Artists Benefits*/
-.artists_benefits{
+.artists_benefits {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
   height: 350px;
 }
-.img_benefits_artists{
+
+.img_benefits_artists {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/working.svg')no-repeat;*/
-  background: url("../../assets/img/working.svg")no-repeat;
+  background: url("../../assets/img/working.svg") no-repeat;
   width: 40%;
   background-size: 100% 100%;
   height: 320px;
 }
-.section_benefits_artists{
+
+.section_benefits_artists {
   width: 30%;
   height: fit-content;
 }
-.section_benefits_artists ul{
+
+.section_benefits_artists ul {
   list-style: none;
 }
-.section_benefits_artists ul li{
+
+.section_benefits_artists ul li {
   margin: 25px 0px;
 }
-.section_benefits_artists ul li i{
+
+.section_benefits_artists ul li i {
   color: #ce1212;
   margin-right: 10px;
 }
 
 /* Amateurs Benefits*/
-.amateurs_benefits{
+.amateurs_benefits {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -378,53 +310,62 @@ input[type="checkbox"]{
   width: 90%;
   height: 350px;
 }
-.img_benefits_amateurs{
+
+.img_benefits_amateurs {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/finding_art.svg')no-repeat;*/
-  background: url("../../assets/img/finding_art.svg")no-repeat;
+  background: url("../../assets/img/finding_art.svg") no-repeat;
   width: 40%;
   background-size: 100% 100%;
   height: 320px;
 }
-.section_benefits_amateurs{
+
+.section_benefits_amateurs {
   width: 30%;
   height: fit-content;
 }
-.section_benefits_amateurs ul{
+
+.section_benefits_amateurs ul {
   list-style: none;
 }
-.section_benefits_amateurs ul li{
+
+.section_benefits_amateurs ul li {
   margin: 25px 0px;
 }
-.section_benefits_amateurs ul li i{
+
+.section_benefits_amateurs ul li i {
   color: #ce1212;
   margin-right: 10px;
 }
 
 /* Registration */
-.registration{
+.registration {
   padding: 8% 0;
   height: 630px;
   background-color: white;
 }
-.img_registration{
+
+.img_registration {
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/undraw_Forms_re_pkrt.svg')no-repeat;*/
-  background: url("../../assets/img/undraw_Forms_re_pkrt.svg")no-repeat;
+  background: url("../../assets/img/undraw_Forms_re_pkrt.svg") no-repeat;
   width: 45%;
   background-size: 100% 100%;
   height: 320px;
 }
-.section_registration{
+
+.section_registration {
   display: flex;
   justify-content: space-around;
 }
-.section_registercontent{
+
+.section_registercontent {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-.section_registercontent .btn-register{
+
+.section_registercontent .btn-register {
   border: none;
   margin-top: 50px;
   background: #ce1212;
@@ -436,28 +377,32 @@ input[type="checkbox"]{
   transition: all 0.3s ease;
   outline: none;
 }
-.section_registercontent .btn-register:hover{
+
+.section_registercontent .btn-register:hover {
   background: white;
   color: #ce1212;
   box-shadow: inset 0 0 0 2px #ce1212;
-  cursor:pointer;
+  cursor: pointer;
 }
-.section_registercontent p{
+
+.section_registercontent p {
   text-align: center;
   font-size: 20px;
 }
 
 /* Footer */
-footer{
+footer {
   background: #1b1717;
 }
-.contact{
+
+.contact {
   padding: 80px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-footer div{
+
+footer div {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -465,16 +410,19 @@ footer div{
   justify-content: center;
   color: white;
 }
-.section_contact{
+
+.section_contact {
   height: 100px;
   justify-content: space-around;
 }
-.section_socialmedia{
+
+.section_socialmedia {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.section_socialmedia i{
+
+.section_socialmedia i {
   color: white;
   text-decoration: none;
   width: 40px;
@@ -485,44 +433,53 @@ footer div{
   text-align: center;
   transition: all 0.2s ease;
 }
-.section_socialmedia i:hover{
+
+.section_socialmedia i:hover {
   width: 45px;
   height: 45px;
   padding-top: 9px;
   padding-left: 1px;
 }
-.facebook{
+
+.facebook {
   background: blue;
 }
-.instagram{
+
+.instagram {
   background: rgb(161, 27, 121);
 }
-.twitter{
+
+.twitter {
   background: rgb(51, 123, 151);
 }
-h6{
+
+h6 {
   font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
 }
-.terms-and-conditions{
+
+.terms-and-conditions {
   color: white;
 }
 
 /* Responsive*/
-@media (max-width: 1000px){
-  nav{
+@media (max-width: 1000px) {
+  nav {
     padding: 5px 20px 5px 30px;
   }
 }
+
 @media (max-width: 920px) {
-  nav .menu-btn i{
+  nav .menu-btn i {
     display: block;
   }
-  #click:checked ~ .menu-btn i:before{
+
+  #click:checked ~ .menu-btn i:before {
     content: "\f00d";
   }
-  nav .menu ul{
+
+  nav .menu ul {
     position: fixed;
     top: 48px;
     left: -100%;
@@ -534,54 +491,66 @@ h6{
     transition: all 0.3s ease;
     box-shadow: 0px 0px 3px rgb(110, 110, 110);
   }
-  #click:checked ~ ul{
+
+  #click:checked ~ ul {
     left: 0;
   }
-  nav .menu ul li{
+
+  nav .menu ul li {
     width: 100%;
     margin: 40px 0;
   }
-  nav .menu ul li a{
+
+  nav .menu ul li a {
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  #click:checked ~ ul li a{
+
+  #click:checked ~ ul li a {
     margin-left: 0px;
   }
-  nav .menu ul li a{
+
+  nav .menu ul li a {
     color: #000;
     transition: all 0.3s ease;
   }
-  nav .menu ul li a:hover{
+
+  nav .menu ul li a:hover {
     background: none;
     color: #ce1212;
     font-weight: 700;
   }
-  .center .title{
+
+  .center .title {
     font-size: 35px;
   }
-  .center .sub_title{
+
+  .center .sub_title {
     font-size: 32px;
   }
-  .purpose{
+
+  .purpose {
     height: 1500px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .default-h4{
+
+  .default-h4 {
     font-size: 30px;
   }
-  .section_purpose{
+
+  .section_purpose {
     height: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
   }
-  .section_purpose .artists{
+
+  .section_purpose .artists {
     height: 50%;
     display: grid;
     grid-template-columns: 100%;
@@ -591,16 +560,18 @@ h6{
         "artists_text"
         "artists_img";
   }
-  .img_artists{
+
+  .img_artists {
     grid-area: artists_img;
     height: 100%;
   }
-  .section_artists{
+
+  .section_artists {
     grid-area: artists_text;
   }
 
   /* amateurs purpose*/
-  .section_purpose .amateurs{
+  .section_purpose .amateurs {
     height: 50%;
     display: grid;
     grid-template-columns: 100%;
@@ -609,97 +580,121 @@ h6{
         "amateurs_text"
         "amateurs_img";
   }
-  .img_amateurs{
+
+  .img_amateurs {
     grid-area: amateurs_img;
     height: 100%
   }
-  .section_amateurs{
+
+  .section_amateurs {
     grid-area: amateurs_text;
   }
 
   /* Artists Benefits*/
-  .artists_benefits{
+  .artists_benefits {
     flex-direction: column;
     height: 450px;
   }
-  .benefits{
+
+  .benefits {
     padding: 60px 0px;
   }
-  .img_benefits_artists{
+
+  .img_benefits_artists {
     width: 60%;
   }
-  .section_benefits_artists{
+
+  .section_benefits_artists {
     width: 100%;
   }
-  .section_benefits_artists ul li{
+
+  .section_benefits_artists ul li {
     text-align: center;
   }
+
   /* Amateurs Benefits*/
-  .amateurs_benefits{
+  .amateurs_benefits {
     flex-direction: column;
     height: 450px;
   }
-  .img_benefits_amateurs{
+
+  .img_benefits_amateurs {
     width: 60%;
   }
-  .section_benefits_amateurs{
+
+  .section_benefits_amateurs {
     width: 100%;
   }
-  .section_benefits_amateurs ul li{
+
+  .section_benefits_amateurs ul li {
     text-align: center;
   }
-  .registration{
+
+  .registration {
     padding: 60px 0px;
   }
 }
-@media(max-width: 630px){
-  .purpose{
+
+@media (max-width: 630px) {
+  .purpose {
     align-items: center;
     width: 100%;
     padding: 55px 15px;
   }
-  .section_purpose{
+
+  .section_purpose {
     width: 100%;
   }
-  .section_registration{
+
+  .section_registration {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .img_registration{
+
+  .img_registration {
     width: 100%;
   }
-  .section_registercontent{
+
+  .section_registercontent {
     width: 100%;
   }
-  .section_registercontent p{
+
+  .section_registercontent p {
     margin-top: 40px;
   }
-  footer{
+
+  footer {
     margin-top: 100px;
   }
-  .contact{
+
+  .contact {
     height: 400px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  .section_uteam{
+
+  .section_uteam {
     order: 10;
   }
-  .section_socialmedia{
+
+  .section_socialmedia {
     width: 50%;
   }
-  .registration{
+
+  .registration {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 800px;
   }
-  .section_registration{
+
+  .section_registration {
     width: 90%;
   }
-  .section_registration p{
+
+  .section_registration p {
     font-size: 17px;
   }
 

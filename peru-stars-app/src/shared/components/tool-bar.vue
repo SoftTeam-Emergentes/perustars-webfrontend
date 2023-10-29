@@ -1,5 +1,5 @@
 <template>
-    <v-card color="grey lighten-4 " flat tile style="margin-bottom: 65px">
+    <v-card color="grey lighten-4 " flat="" tile style="margin-bottom: 65px" >
       <v-toolbar   app :elevation="8">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
         <v-toolbar-title class="text-red font-weight-bold text-h4 ml-4 mr-3">PeruStars</v-toolbar-title>
