@@ -1,21 +1,30 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import PreHome from "@/accountManagement/views/PreHome.vue";
 
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Home.vue'),
-      },
-    ],
+    name: 'pre-home',
+    component: PreHome,
   },
+  {
+    path: "/about",
+    name: "about",
+    component: () => import('@/accountManagement/views/About.vue'),
+  },
+  {
+    path: "/sign-in",
+    name: "sign-in",
+    component: () => import('@/accountManagement/views/SignIn.vue'),
+  },
+  {
+    path: "/sign-up",
+    name: "sign-up",
+    component: () => import('@/accountManagement/views/SignUp.vue')
+  },
+
+
 ]
 
 const router = createRouter({
