@@ -7,12 +7,12 @@ const routes = [
   {
     path: '/',
     name: 'PreHome',
-    component: () => import(/* webpackChunkName: "about" */ '../views/PreHome.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../accountManagement/views/PreHome.vue')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../accountManagement/views/About.vue')
   },
   {
     path: '/home',
@@ -22,12 +22,12 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../accountManagement/views/Login.vue')
   },
   {
     path: '/register',
     name: 'Register',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Register.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../accountManagement/views/Register.vue')
   },
   {
     path: '/terms&conditions',
