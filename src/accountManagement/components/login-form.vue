@@ -3,7 +3,7 @@
     <div class="d-flex flex-column align-center">
       <v-card-title class="mb-12 text-h6 text-md-h4 font-weight-medium" he>Iniciar Sesión</v-card-title>
       <v-img
-          src="../assets/img/programmer.svg"
+          src="../../assets/img/programmer.svg"
           alt="Iniciar Sesion"
           max-width="112px"
           max-height="112px"
@@ -54,8 +54,8 @@
 
 <script>
 //import UserApiService from '../services/users-api.service'
-import HobbyistsApiService from '../services/hobbyists-api.service'
-import ArtistsApiService from '../services/artists-api.service'
+import HobbyistsApiService from '../../services/hobbyists-api.service'
+import ArtistsApiService from '../../services/artists-api.service'
 export default {
 
   name: "login-form",
