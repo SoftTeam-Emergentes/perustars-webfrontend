@@ -120,7 +120,7 @@ export default {
       userId: JSON.parse(localStorage.getItem('person')).id,
       items: [
         {
-          src: require('../assets/img/principal-img.jpg'),
+          src: require('../../assets/img/principal-img.jpg'),
         },
         {
           src: 'https://picsum.photos/id/1049/3900/3120.jpg',

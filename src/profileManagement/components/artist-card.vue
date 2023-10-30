@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import SpecialtiesApiService from '../services/specialties-api.service'
-import LoginDialog from '../components/login-dialog'
+import SpecialtiesApiService from '../../services/specialties-api.service'
+import LoginDialog from '../../accountManagement/components/login-dialog.vue'
 
 export default {
   name: "artist-card",

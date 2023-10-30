@@ -14,7 +14,7 @@
         </v-toolbar>
         <v-card-text>
           <div class="text-h2 pa-12">
-            <img alt="user" src="../assets/img/please-login.svg" width="100%" height="200vh">
+            <img alt="user" src="../../assets/img/please-login.svg" width="100%" height="200vh">
             <div class="btns mt-3">
               <v-btn class="mr-2" color="error" outlined to="/register">Regístrate</v-btn>
               <v-btn class="ml-2" color="error" to="/login">Iniciar Sesión</v-btn>

@@ -68,7 +68,7 @@
 // Services
 import User from '../model/user'
 //Components
-import TermsAndConditions from "../../components/terms-and-conditions.vue";
+import TermsAndConditions from "./terms-and-conditions.vue";
 
 export default {
 

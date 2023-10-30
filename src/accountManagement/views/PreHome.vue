@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HomePreview from "../../components/home-preview.vue";
+import HomePreview from "../../shared/components/home-preview.vue";
 
 export default {
   name: "PreHome",

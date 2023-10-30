@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import EventId from "../components/event-id";
+import EventId from "../components/event-id.vue";
 export default {
   name: "Event",
   components: {

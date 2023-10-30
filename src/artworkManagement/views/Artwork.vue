@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ArtworkId from "../components/artwork-id";
+import ArtworkId from "../components/artwork-id.vue";
 export default {
   name: "Artwork",
   components: {ArtworkId}

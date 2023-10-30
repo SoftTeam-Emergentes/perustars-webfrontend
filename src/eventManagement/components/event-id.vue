@@ -83,7 +83,7 @@ export default {
       isScheduled: false,
       items: [
         {
-          src: require('../assets/img/principal-img.jpg'),
+          src: require('../../assets/img/principal-img.jpg'),
         },
         {
           src: 'https://picsum.photos/3900/3120',

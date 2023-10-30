@@ -11,7 +11,7 @@
         <div class="cont">
           <v-card-title style="width: 320px" class="d-block text-left ml-0 white--text text-h5 font-weight-bold mx-auto">{{ brandName }}</v-card-title>
           <v-img
-              src="../assets/img/amateur.jpg"
+              src="../../assets/img/amateur.jpg"
               alt="artist image"
               width="200" height="200"
               class="img"
@@ -298,13 +298,13 @@
 </template>
 
 <script>
-import SpecialtiesApiService from '../services/specialties-api.service'
+import SpecialtiesApiService from '../../services/specialties-api.service'
 import ArtistsApiService from '../services/artists-api.service'
 
-import ArtworkCard from "../components/artwork-card";
-import ArtistEventCard from "../components/artist-event-card";
-import ArtworksApiService from "../services/artworks-api.service";
-import EventsApiService from "../services/events-api.service";
+import ArtworkCard from "../../artworkManagement/components/artwork-card.vue";
+import ArtistEventCard from "../../eventManagement/components/artist-event-card.vue";
+import ArtworksApiService from "../../artworkManagement/services/artworks-api.service";
+import EventsApiService from "../../eventManagement/services/events-api.service";
 
 export default {
   name: "ArtistProfile",

@@ -53,14 +53,14 @@
 
 <script>
 //Services
-import ArtistApiService from '../services/artists-api.service'
-import ArtworksApiService from '../services/artworks-api.service'
-import EventsApiService from '../services/events-api.service'
+import ArtistApiService from '../../profileManagement/services/artists-api.service'
+import ArtworksApiService from '../../artworkManagement/services/artworks-api.service'
+import EventsApiService from '../../eventManagement/services/events-api.service'
 
 //Components
-import ArtworkCard from "./artwork-card";
-import EventCard from "./event-card"
-import ArtistCard from "./artist-card"
+import ArtworkCard from "../../artworkManagement/components/artwork-card.vue";
+import EventCard from "../../profileManagement/components/event-card.vue"
+import ArtistCard from "../../profileManagement/components/artist-card.vue"
 
 export default {
   name: "home-preview",
@@ -77,7 +77,7 @@ export default {
       events: [],
       imagesSlider: [
         {
-          src: require('../assets/img/principal-img.jpg'),
+          src: require('../../assets/img/principal-img.jpg'),
         },
         {
           src: 'https://picsum.photos/id/1049/3900/3120.jpg',

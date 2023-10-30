@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../profileManagement/views/Home.vue')
   },
   {
     path: '/login',
@@ -32,37 +32,37 @@ const routes = [
   {
     path: '/terms&conditions',
     name: 'TermsAndConditions',
-    component: () => import(/* webpackChunkName: "about" */ '../components/terms-and-conditions.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../accountManagement/components/terms-and-conditions.vue')
   },
   {
     path: '/artist/:artistId/event/:eventId',
     name: 'Event',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Event.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../eventManagement/views/Event.vue')
   },
   {
     path: '/artist/:artistId/artwork/:artworkId',
     name: 'Artwork',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Artwork.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../artworkManagement/views/Artwork.vue')
   },
   {
     path: '/hobbyist/profile',
     name: 'Hobbyist',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Hobbyist.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../profileManagement/views/Hobbyist.vue')
   },
   {
     path: '/artist/:artistId',
     name: 'ArtistProfile',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ArtistProfile.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../profileManagement/views/ArtistProfile.vue')
   },
   {
     path: '/artwork/new',
     name: 'ArtworkNew',
-    component: () => import(/* webpackChunkName: "about" */ '../components/new-artwork')
+    component: () => import(/* webpackChunkName: "about" */ '../artworkManagement/components/new-artwork.vue')
   },
   {
     path: '/event/new',
     name: 'EventNew',
-    component: () => import('../components/new-event.vue')
+    component: () => import('../eventManagement/components/new-event.vue')
   },
   {
     path: '/hobbyist/artworks',
@@ -72,17 +72,17 @@ const routes = [
   {
     path: '/artist/:artistId/event/:eventId/assistance',
     name: 'Assistance',
-    component:()=>import(/* webpackChunkName: "about" */'../components/assistance-form.vue')
+    component:()=>import(/* webpackChunkName: "about" */'../eventManagement/components/assistance-form.vue')
   },
   {
     path: '*',
     name:'Error404',
-    component:()=>import(/* webpackChunkName: "about" */'../components/error404-wildcart.vue')
+    component:()=>import(/* webpackChunkName: "about" */'../shared/components/error404-wildcart.vue')
   },
   {
     path:'/home/artist/profile',
     name:'HomeArtist',
-    component:()=>import('../views/ArtistProfileEdit.vue')
+    component:()=>import('../profileManagement/views/ArtistProfileEdit.vue')
   }
 
 ]

@@ -39,7 +39,7 @@ export default {
   font-size: 80px;
 }
 .img-notfound{
-  background: url("../assets/img/undraw_page_not_found_su7k.svg")no-repeat;
+  background: url("../../assets/img/undraw_page_not_found_su7k.svg")no-repeat;
   background-size: cover;
   background-position: center;
 }

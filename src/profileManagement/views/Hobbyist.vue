@@ -78,9 +78,9 @@
 
 <script>
 // Services
-import SpecialtiesApiService from '../services/specialties-api.service'
+import SpecialtiesApiService from '../../services/specialties-api.service'
 //Components
-import SpecialtyCard from '../components/specialty-card'
+import SpecialtyCard from '../components/specialty-card.vue'
 
 export default {
   name: "Hobbyist",

@@ -35,14 +35,14 @@
 
 //Services
 import ArtistApiService from '../services/artists-api.service'
-import ArtworksApiService from '../services/artworks-api.service'
-import EventsApiService from '../services/events-api.service'
+import ArtworksApiService from '../../artworkManagement/services/artworks-api.service'
+import EventsApiService from '../../eventManagement/services/events-api.service'
 
 //Components
-import SideBar from '../components/side-bar'
-import ArtistCard from '../components/artist-card'
-import ArtworkCard from '../components/artwork-card'
-import EventCard from '../components/event-card'
+import SideBar from '../components/side-bar.vue'
+import ArtistCard from '../components/artist-card.vue'
+import ArtworkCard from '../../artworkManagement/components/artwork-card.vue'
+import EventCard from '../components/event-card.vue'
 
 export default {
   name: 'Home',

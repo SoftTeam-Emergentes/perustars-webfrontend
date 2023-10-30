@@ -11,9 +11,9 @@
 
 <script>
 // Services
-import FavoriteArtworksApiService from '../services/favorite-artworks-api.service'
+import FavoriteArtworksApiService from '../artworkManagement/services/favorite-artworks-api.service'
 // Components
-import ArtworkCard from '../components/artwork-card'
+import ArtworkCard from '../artworkManagement/components/artwork-card.vue'
 export default {
   name: "HobbyistFavoriteArtworks",
   components:{

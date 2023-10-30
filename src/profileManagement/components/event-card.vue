@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import LoginDialog from '../components/login-dialog'
+import LoginDialog from '../../accountManagement/components/login-dialog.vue'
 export default {
   name: "event-card",
   props:[
