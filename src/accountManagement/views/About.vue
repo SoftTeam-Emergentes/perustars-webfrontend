@@ -221,7 +221,7 @@ input[type="checkbox"]{
 /* Cover Page*/
 .img{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/cover_page.jpg')no-repeat;*/
-  background: url("../assets/img/cover_page.jpg")no-repeat;
+  background: url("../../assets/img/cover_page.jpg")no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -287,7 +287,7 @@ input[type="checkbox"]{
 }
 .img_artists{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/painting.jpg')no-repeat;*/
-  background: url("../assets/img/painting.jpg")no-repeat;
+  background: url("../../assets/img/painting.jpg")no-repeat;
   opacity: 0.9;
   width: 100%;
   background-size: 100% 100%;
@@ -308,7 +308,7 @@ input[type="checkbox"]{
 }
 .img_amateurs{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/amateur.jpg')no-repeat;*/
-  background: url("../assets/img/amateur.jpg")no-repeat;
+  background: url("../../assets/img/amateur.jpg")no-repeat;
   opacity: 0.9;
   width: 100%;
   background-size: 100% 100%;
@@ -341,7 +341,7 @@ input[type="checkbox"]{
 }
 .img_benefits_artists{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/working.svg')no-repeat;*/
-  background: url("../assets/img/working.svg")no-repeat;
+  background: url("../../assets/img/working.svg")no-repeat;
   width: 40%;
   background-size: 100% 100%;
   height: 320px;
@@ -372,7 +372,7 @@ input[type="checkbox"]{
 }
 .img_benefits_amateurs{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/finding_art.svg')no-repeat;*/
-  background: url("../assets/img/finding_art.svg")no-repeat;
+  background: url("../../assets/img/finding_art.svg")no-repeat;
   width: 40%;
   background-size: 100% 100%;
   height: 320px;
@@ -400,7 +400,7 @@ input[type="checkbox"]{
 }
 .img_registration{
   /*background: url('../../FrontEnd Open source/web-apps-sw51/src/app/components/pre-menu/img/undraw_Forms_re_pkrt.svg')no-repeat;*/
-  background: url("../assets/img/undraw_Forms_re_pkrt.svg")no-repeat;
+  background: url("../../assets/img/undraw_Forms_re_pkrt.svg")no-repeat;
   width: 45%;
   background-size: 100% 100%;
   height: 320px;
