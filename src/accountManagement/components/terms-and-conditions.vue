@@ -71,7 +71,7 @@
         <p class="Parrafo">PeruStars opera únicamente como una plataforma de divulgación artistica, por tanto, no se
           encarga ni es responsable por la organización del mismo; asimismo, no asume responsabilidad alguna por el
           aplazamiento o cancelación del evento, así como por cualquier hecho que ocurra antes, durante o con
-          posterioridad a la celebración del mismo.
+          posterioridad a la celebración del mismo.</p>
         <p class="lista"></p>
         <p class="lista">a. El artista es el único propietario y coordinador del evento y, como tal, posee el derecho
           exclusivo de decidir en todas las cuestiones relacionadas con las entradas; es decir, sobre los precios,
