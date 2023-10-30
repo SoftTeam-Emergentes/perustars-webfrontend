@@ -3,7 +3,7 @@
     <div class="d-flex flex-column align-center">
       <v-card-title class="mb-12 text-h6 text-md-h4 font-weight-medium">Regístrate</v-card-title>
       <v-img
-          src="../assets/img/membership.svg"
+          src="../../assets/img/membership.svg"
           alt="Registrate"
           max-width="112px"
           max-height="112px"
@@ -66,9 +66,9 @@
 
 <script>
 // Services
-import User from '../models/user'
+import User from '../model/user'
 //Components
-import TermsAndConditions from "./terms-and-conditions";
+import TermsAndConditions from "../../components/terms-and-conditions.vue";
 
 export default {
 
