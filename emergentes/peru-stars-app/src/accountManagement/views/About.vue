@@ -3,16 +3,17 @@
   <div class="relative w-full h-24rem">
     <div class=" img w-full h-full"></div>
     <div class="center absolute d-flex align-items-center justify-content-center text-white">
-      <div class="text-6xl font-semibold " >Hay un artista en tu interior</div>
+      <div class="text-6xl font-semibold ">Hay un artista en tu interior</div>
       <br>
       <br>
       <div class="text-4xl font-semibold">Descúbrelo</div>
     </div>
   </div>
   -----------
-  <div class="flex flex-column align-items-center  justify-content-center" >
+  <div class="flex flex-column align-items-center  justify-content-center">
     <h1 class="text-4xl font-semibold">Nuestro Propósito</h1>
-    <div class="flex flex-wrap justify-content-center  align-items-center" style="max-width: 1000px; width: calc(100vw - 18px)" >
+    <div class="flex flex-wrap justify-content-center  align-items-center"
+         style="max-width: 1000px; width: calc(100vw - 18px)">
 
       <div
           class="img_artists flex-grow-1 md:flex-grow-0  opacity-80 border-round"></div>
@@ -57,10 +58,13 @@
         </ul>
       </div>
 
-      <div class="spacing">     <hr>    </div>
+      <div class="spacing">
+        <hr>
+      </div>
 
-      <div class="flex-grow-1 md:flex-grow-0 align-items-center justify-content-center text-white font-bold  border-round "
-      style="width: 50%; min-width: 400px; background: rgba(0, 0, 0, 0.8);">
+      <div
+          class="flex-grow-1 md:flex-grow-0 align-items-center justify-content-center text-white font-bold  border-round "
+          style="width: 50%; min-width: 400px; background: rgba(0, 0, 0, 0.8);">
         <ul>
           <li><i class="fas fa-check"></i> Descubre artistas, proyectos, eventos y más...</li>
           <li><i class="fas fa-check"></i> Sigue a tus artistas favoritos.</li>
@@ -68,20 +72,24 @@
         </ul>
       </div>
       <div class="img_benefits_amateurs flex-grow-1 md:flex-grow-0  opacity-70"></div>
-      <div class="spacing">     <hr>    </div>
+      <div class="spacing">
+        <hr>
+      </div>
       <p class="text-3xl flex font-semibold w-full justify-content-center">Regístrate Gratis</p>
-      <div class="img_registration flex-grow-1 md:flex-grow-0 opacity-70" ></div>
-      <div class="flex flex-column flex-grow-1 md:flex-grow-0 align-items-center text-white border-round-2xl " style="background: rgba(0, 0, 0, 0.8);">
+      <div class="img_registration flex-grow-1 md:flex-grow-0 opacity-70"></div>
+      <div class="flex flex-column flex-grow-1 md:flex-grow-0 align-items-center text-white border-round-2xl "
+           style="background: rgba(0, 0, 0, 0.8);">
         <p class="mx-2">Únete ahora y obtén la oportunidad de recibir beneficios únicos.</p>
-        <pv-button class="bg-red-500 m-5" to="/register">Regístrate</pv-button>
+        <pv-button class="bg-red-500 m-5" @click="navigateToSignUp">Regístrate</pv-button>
       </div>
     </div>
   </div>
   </body>
-  <footer class="flex flex-row justify-content-center align-items-center p-1 w-full mw-5 text-white" style="background:#1b1717; ">
+  <footer class="flex flex-row justify-content-center align-items-center p-1 w-full mw-5 text-white"
+          style="background:#1b1717; ">
     <div class="section_contact">
       <h6>Contáctanos</h6>
-      <i class="pi pi-fw pi-home" > </i>
+      <i class="pi pi-fw pi-home"> </i>
       <p>info@uteam.com</p>
       <p>(01) 333-3333 / (51) 999 999 999</p>
     </div>
@@ -92,12 +100,13 @@
       <!--<a href= "https://facebook.com" target="_blank"><i class="fab fa-facebook-f facebook"></i></a>
           <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram instagram"></i></a>
           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter twitter"></i></a>-->
-      <pv-button class="bg-red-500 m-5"   to="/terms&conditions">Términos y condiciones</pv-button>
+      <pv-button class="bg-red-500 m-5" to="/terms&conditions">Términos y condiciones</pv-button>
       <!--        <terms-and-conditions dialogValue="dialogValue"></terms-and-conditions>-->
     </div>
   </footer>
 </template>
 <script>
+
 export default {
   name: "about-view",
   components: {
@@ -112,6 +121,12 @@ export default {
   },
   created() {
     this.$emit('isLogged')
+  },
+  methods: {
+    navigateToSignUp()
+    {
+      this.$router.push({name: 'sign-up'});
+    }
   }
 }
 </script>
@@ -124,7 +139,8 @@ export default {
   background-position: center;
   position: relative;
 }
-.img::before{
+
+.img::before {
   content: ""; /* Crea un pseudo-elemento ::before */
   position: absolute;
   top: 0;
@@ -157,10 +173,11 @@ export default {
   width: 600px;
   background-size: 100% 100%;
   max-height: 380px;
-  height:40vw;
-  min-height:200px;
+  height: 40vw;
+  min-height: 200px;
 }
-.img_artists::before{
+
+.img_artists::before {
   content: ""; /* Crea un pseudo-elemento ::before */
   position: relative;
   background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente oscuro */
@@ -178,8 +195,8 @@ export default {
   width: 600px;
   background-size: 100% 100%;
   max-height: 400px;
-  height:40vw;
-  min-height:200px;
+  height: 40vw;
+  min-height: 200px;
 }
 
 .img_benefits_artists {
@@ -195,8 +212,9 @@ export default {
   background-size: 100% 100%;
   height: 320px;
 }
-.img_registration{
-  background: url("../../assets/img/undraw_Forms_re_pkrt.svg")no-repeat;
+
+.img_registration {
+  background: url("../../assets/img/undraw_Forms_re_pkrt.svg") no-repeat;
   width: 50%;
   background-size: 100% 100%;
   height: 320px;
