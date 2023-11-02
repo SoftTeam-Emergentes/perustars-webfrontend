@@ -2,29 +2,29 @@ import http from '../../shared/service/http-common';
 
 export class SuppliersApiService {
     getAll() {
-        return http.get('/hobbyist');
+        return http.get('/hobbyists');
     }
 
     getById(id) {
-        return http.get(`/hobbyist/${id}`);
+        return http.get(`/hobbyists/${id}`);
     }
 
     create(data) {
-        return http.post('/hobbyist', data);
+        return http.post('/hobbyists', data);
     }
 
     update(id, data) {
-        return http.put(`/hobbyist/${id}`, data);
+        return http.put(`/hobbyists/${id}`, data);
     }
 
     delete(id) {
-        return http.delete(`/hobbyist/${id}`);
+        return http.delete(`/hobbyists/${id}`);
     }
 
     findByName(name) {
-        return http.get(`/hobbyist?title=${name}`);
+        return http.get(`/hobbyists?title=${name}`);
     }
     findByLastName(lastName) {
-        return http.get(`/hobbyist?title=${lastName}`);
+        return http.get(`/hobbyists?title=${lastName}`);
     }
 }
