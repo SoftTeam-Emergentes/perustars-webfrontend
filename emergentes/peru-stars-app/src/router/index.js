@@ -24,7 +24,26 @@ const router = createRouter({
       path: '/sign-up',
       name: 'sign-up',
       component: () => import('@/accountManagement/views/SignUp.vue')
-    }
+    },
+    {
+      path: '/hobbyist',
+      name: 'hobbyist',
+      component: () => import('@/profileManagement/views/Hobbyist.vue'),
+      children: [
+        {
+          path: 'home',
+          name: 'home-hobbyist',
+          component: () => import('@/profileManagement/views/HomeHobbyist.vue'),
+        },
+        {
+          path: 'profile',
+          name: 'profile-hobbyist',
+          component: () => import('@/profileManagement/views/ProfileHobbyist.vue'),
+        },
+
+      ]
+    },
+
   ]
 })
 

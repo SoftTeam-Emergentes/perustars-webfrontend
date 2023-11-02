@@ -30,6 +30,9 @@ import AvatarGroup from 'primevue/avatargroup';
 import Tag from "primevue/tag";
 import Toolbar from "primevue/toolbar";
 import Checkbox from "primevue/checkbox";
+import Sidebar from "primevue/sidebar";
+import OrderList from "primevue/orderlist";
+import Listbox from "primevue/listbox";
 
 
 
@@ -56,6 +59,9 @@ app.component('pv-avatar-group', AvatarGroup);
 app.component('pv-tag', Tag)
 app.component('pv-toolbar', Toolbar)
 app.component('pv-checkbox', Checkbox)
+app.component('pv-sidebar', Sidebar)
+app.component('pv-order-list', OrderList)
+app.component('pv-list-box', Listbox)
 
 
 
