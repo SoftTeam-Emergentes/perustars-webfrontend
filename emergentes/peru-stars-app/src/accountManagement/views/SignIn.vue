@@ -8,7 +8,7 @@
 
         <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
         <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" @click="navigateToSingUp">Create today!</a>
       </div>
 
       <div>
@@ -37,12 +37,16 @@
 
 export default {
   name: "SignIn",
-
+  methods:{
+    navigateToSingUp(){
+      this.$router.push({name:'sign-up'});
+    }
+  }
 }
 </script>
 <style scoped>
 .background-image {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
