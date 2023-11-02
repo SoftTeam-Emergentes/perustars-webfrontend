@@ -1,12 +1,12 @@
 <template>
   <body>
-  <div class="relative w-full h-24rem">
+  <div class="relative w-full h-screen">
     <div class=" img w-full h-full"></div>
     <div class="center absolute d-flex align-items-center justify-content-center text-white">
-      <div class="text-6xl font-semibold ">Hay un artista en tu interior</div>
+      <div class="text-7xl font-semibold ">Hay un artista en tu interior</div>
       <br>
       <br>
-      <div class="text-4xl font-semibold">Descúbrelo</div>
+      <div class="text-5xl font-semibold">Descúbrelo</div>
     </div>
   </div>
   -----------
@@ -147,7 +147,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente oscuro */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
   z-index: 1;
 }
 
