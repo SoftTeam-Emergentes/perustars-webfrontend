@@ -1,6 +1,6 @@
 import http from '../../shared/service/http-common';
 
-export class SuppliersApiService {
+export class hobbyistsApiService {
     getAll() {
         return http.get('/hobbyists');
     }
