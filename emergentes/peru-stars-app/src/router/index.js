@@ -28,17 +28,17 @@ const router = createRouter({
     {
       path: '/hobbyist',
       name: 'hobbyist',
-      component: () => import('@/profileManagement/views/Hobbyist.vue'),
+      component: () => import('@/profileManagement/pages/hobbyist.component.vue'),
       children: [
         {
           path: 'home',
           name: 'home-hobbyist',
-          component: () => import('@/profileManagement/views/HomeHobbyist.vue'),
+          component: () => import('@/profileManagement/pages/home-hobbyist.component.vue'),
         },
         {
           path: 'profile',
           name: 'profile-hobbyist',
-          component: () => import('@/profileManagement/views/ProfileHobbyist.vue'),
+          component: () => import('@/profileManagement/pages/profile-hobbyist.component.vue'),
         },
 
       ]

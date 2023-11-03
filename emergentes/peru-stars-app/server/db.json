@@ -273,166 +273,182 @@
       "artistId": 5
     }
   ],
-  "events": [
+  "artEvents": [
     {
-      "eventId": 4,
-      "eventTitle": "El arte y la locura",
+      "id": 4,
+      "title": "El arte y la locura",
       "eventType": 1,
-      "dateStart": "2021-06-22T17:36:03",
-      "dateEnd": "2021-06-28T17:36:03",
-      "eventDescription": "Descubre el proceso creativo, y aprende a salir de tu zona de confort, con el método Van Gogh podrás realizar cualquier proyecto desde un enfoque ágil, divirtiéndote en el proceso.",
+      "startDateTime": "2021-06-22T17:36:03",
+      "locationCountry": "peru, truji 1400",
+      "description": "Descubre el proceso creativo, y aprende a salir de tu zona de confort, con el método Van Gogh podrás realizar cualquier proyecto desde un enfoque ágil, divirtiéndote en el proceso.",
       "eventAdditionalInfo": "Encuéntranos en el centro cultural ULima",
-      "artistId": 1
+      "artistId": 1,
+      "currentStatus": "progress"
     },
     {
-      "eventId": 5,
-      "eventTitle": "La forma de la nada",
+      "id": 5,
+      "title": "La forma de la nada",
       "eventType": 2,
-      "dateStart": "2021-07-13T17:36:03",
-      "dateEnd": "2021-07-17T17:36:03",
-      "eventDescription": "En este microtaller virtual, aprenderás a realizar obras completas desde un proceso de abstracción. Pondras a prueba tu capacidad de figuración en tus obras, y lo divertido del proceso de creación",
+      "startDateTime": "2021-07-13T17:36:03",
+      "locationCountry": "peru, truji 1400",
+      "description": "En este microtaller virtual, aprenderás a realizar obras completas desde un proceso de abstracción. Pondras a prueba tu capacidad de figuración en tus obras, y lo divertido del proceso de creación",
       "eventAdditionalInfo": "Entradas del evento en Joinnus.com ",
-      "artistId": 1
+      "artistId": 1,
+      "currentStatus": "progress"
     },
     {
-      "eventId": 6,
-      "eventTitle": "Taller de pintura para niños",
+      "id": 6,
+      "title": "Taller de pintura para niños",
       "eventType": 2,
-      "dateStart": "2021-07-02T17:36:03",
-      "dateEnd": "2021-07-03T17:36:03",
-      "eventDescription": "En este microtaller virtual, tus niños aprenderan conceptos basicos de pintura, tales como color , forma y espacio. Desde un punto de vista didactico y divertido, para que tu hijo aprenda y se divierta con el arte",
+      "startDateTime": "2021-07-02T17:36:03",
+      "locationCountry": "peru, truji 14003",
+      "description": "En este microtaller virtual, tus niños aprenderan conceptos basicos de pintura, tales como color , forma y espacio. Desde un punto de vista didactico y divertido, para que tu hijo aprenda y se divierta con el arte",
       "eventAdditionalInfo": "Entradas del evento en Joinnus.com ",
-      "artistId": 1
+      "artistId": 1,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 19,
-      "eventTitle": "Exposición de arte plásticas, Miraflores",
+      "id": 19,
+      "title": "Exposición de arte plásticas, Miraflores",
       "eventType": 1,
-      "dateStart": "2021-07-01T00:00:00",
-      "dateEnd": "2021-07-07T00:00:00",
-      "eventDescription": "Ven y disfruta de las mayores obras de mi autoría. Durante la primera semana de Julio, en el museo San Luis Quesada Garland, Miraflores.",
+      "startDateTime": "2021-07-01T00:00:00",
+      "locationCountry": "peru, ayacho 14000",
+      "description": "Ven y disfruta de las mayores obras de mi autoría. Durante la primera semana de Julio, en el museo San Luis Quesada Garland, Miraflores.",
       "eventAdditionalInfo": "",
-      "artistId": 1
+      "artistId": 1,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 1,
-      "eventTitle": "Exposicion Monalisa en Lima",
+      "id": 1,
+      "title": "Exposicion Monalisa en Lima",
       "eventType": 1,
-      "dateStart": "2021-06-20T17:36:03",
-      "dateEnd": "2021-06-25T17:36:03",
-      "eventDescription": "Por primera vez en Lima, una de las mejores obras de los tiempos, conoce la vida y obra de DaVinci y sus mejores obras",
+      "startDateTime": "2021-06-20T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Por primera vez en Lima, una de las mejores obras de los tiempos, conoce la vida y obra de DaVinci y sus mejores obras",
       "eventAdditionalInfo": "Encuentranos en MALI, niños menores de 12 años no pagan!",
-      "artistId": 2
+      "artistId": 2,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 2,
-      "eventTitle": "Conversatorio: Davinci y su influencia mundial",
+      "id": 2,
+      "title": "Conversatorio: Davinci y su influencia mundial",
       "eventType": 1,
-      "dateStart": "2021-06-25T17:36:03",
-      "dateEnd": "2021-06-26T17:36:03",
-      "eventDescription": "Conversatorio sobre la influencia de Davinci en el mundo, encuentra lo interesante en el mundo del Arte junto a nuestros grupo de panelistas expertos en arte",
+      "startDateTime": "2021-06-25T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Conversatorio sobre la influencia de Davinci en el mundo, encuentra lo interesante en el mundo del Arte junto a nuestros grupo de panelistas expertos en arte",
       "eventAdditionalInfo": "Encuentranos en el centro cultural de la Universidad de Lima",
-      "artistId": 2
+      "artistId": 2,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 3,
-      "eventTitle": "Ingenieria y Arte",
+      "id": 3,
+      "title": "Ingenieria y Arte",
       "eventType": 1,
-      "dateStart": "2021-06-20T17:36:03",
-      "dateEnd": "2021-06-24T17:36:03",
-      "eventDescription": "Conoce lo maravilloso del arte y la ingenieria",
+      "startDateTime": "2021-06-20T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Conoce lo maravilloso del arte y la ingenieria",
       "eventAdditionalInfo": "Encuentranos en la sala de exposiciones Garland en Miraflores",
-      "artistId": 2
+      "artistId": 2,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 7,
-      "eventTitle": "Afinar las vulgaridades",
+      "id": 7,
+      "title": "Afinar las vulgaridades",
       "eventType": 2,
-      "dateStart": "2021-07-25T17:36:03",
-      "dateEnd": "2021-07-30T17:36:03",
-      "eventDescription": "Sea cualquier arte que estes realizando, debemos de aprender que el mensaje que queremos transmitir, por atrevido que sea, debe realizarse desde un enfoque fino y elegante",
+      "startDateTime": "2021-07-25T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Sea cualquier arte que estes realizando, debemos de aprender que el mensaje que queremos transmitir, por atrevido que sea, debe realizarse desde un enfoque fino y elegante",
       "eventAdditionalInfo": "Encuentranos en la galeria Garland en las respectivas fechas a las 4 de la tarde ",
-      "artistId": 3
+      "artistId": 3,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 8,
-      "eventTitle": "Anatomia para obras al desnudo",
+      "id": 8,
+      "title": "Anatomia para obras al desnudo",
       "eventType": 2,
-      "dateStart": "2021-06-25T17:36:03",
-      "dateEnd": "2021-06-30T17:36:03",
-      "eventDescription": "Aprende los conceptos basicos, del complejo arte de dibujar el cuerpo humano. Domina desde lo mas basico, hasta lo mas complejo en el microtaller de 5 días. ",
+      "startDateTime": "2021-06-25T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Aprende los conceptos basicos, del complejo arte de dibujar el cuerpo humano. Domina desde lo mas basico, hasta lo mas complejo en el microtaller de 5 días. ",
       "eventAdditionalInfo": "Entradas en Joinnus.com ",
-      "artistId": 3
+      "artistId": 3,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 9,
-      "eventTitle": "El discurso afectivo del arte",
+      "id": 9,
+      "title": "El discurso afectivo del arte",
       "eventType": 2,
-      "dateStart": "2021-06-25T17:36:03",
-      "dateEnd": "2021-06-26T17:36:03",
-      "eventDescription": "En este conversatorio conoceras la responsabilidad que tiene el artista de mostrar sus emociones atraves de su obra. Retrata tus mayores sentimientos y plantea emocionar a tu publico ",
+      "startDateTime": "2021-06-25T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "En este conversatorio conoceras la responsabilidad que tiene el artista de mostrar sus emociones atraves de su obra. Retrata tus mayores sentimientos y plantea emocionar a tu publico ",
       "eventAdditionalInfo": "Encuentranos en el centro cultural peruano japones ",
-      "artistId": 3
+      "artistId": 3,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 10,
-      "eventTitle": "Vivir de la musica",
+      "id": 10,
+      "title": "Vivir de la musica",
       "eventType": 1,
-      "dateStart": "2021-07-05T17:36:03",
-      "dateEnd": "2021-07-10T17:36:03",
-      "eventDescription": "En esta conferencia Gian marco explicara que tan difícil es ser musico en el país , además brindara ciertos consejos desde el punto de su experiencia.",
+      "startDateTime": "2021-07-05T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "En esta conferencia Gian marco explicara que tan difícil es ser musico en el país , además brindara ciertos consejos desde el punto de su experiencia.",
       "eventAdditionalInfo": "Encuentranos en el centro cultural de la PUCP. Entradas disponibles en Teleticket",
-      "artistId": 4
+      "artistId": 4,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 11,
-      "eventTitle": "Conoce tu voz",
+      "id": 11,
+      "title": "Conoce tu voz",
       "eventType": 1,
-      "dateStart": "2021-07-01T17:36:03",
-      "dateEnd": "2021-07-03T17:36:03",
-      "eventDescription": "Aprende a tener tu propia voz. Sabemos lo dificil que es hallar un estilo unico, asi que en este conversatorio aprenderas a reconocer tus tonos unicos y voz propio",
+      "startDateTime": "2021-07-01T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Aprende a tener tu propia voz. Sabemos lo dificil que es hallar un estilo unico, asi que en este conversatorio aprenderas a reconocer tus tonos unicos y voz propio",
       "eventAdditionalInfo": "Charla exclusiva para alumnos de la UPC",
-      "artistId": 4
+      "artistId": 4,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 12,
-      "eventTitle": "Canta Peru",
+      "id": 12,
+      "title": "Canta Peru",
       "eventType": 1,
-      "dateStart": "2021-07-10T17:36:03",
-      "dateEnd": "2021-07-15T17:36:03",
-      "eventDescription": "Gian Marco interpretara las canciones mas representativas de la cultura peruana por el mes patrio. Disfruta este maravilloso evento con toda tu familia",
+      "startDateTime": "2021-07-10T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "Gian Marco interpretara las canciones mas representativas de la cultura peruana por el mes patrio. Disfruta este maravilloso evento con toda tu familia",
       "eventAdditionalInfo": "Compra tus entradas en Teleticket.com",
-      "artistId": 4
+      "artistId": 4,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 16,
-      "eventTitle": "Evento nuevo",
+      "id": 16,
+      "title": "Evento nuevo",
       "eventType": 1,
-      "dateStart": "2021-06-30T00:00:00",
-      "dateEnd": "2021-07-22T00:00:00",
-      "eventDescription": "evento de ejemplo",
+      "startDateTime": "2021-06-30T00:00:00",
+      "locationCountry": "peru, lima 1400",
+      "description": "evento de ejemplo",
       "eventAdditionalInfo": "",
-      "artistId": 4
+      "artistId": 4,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 13,
-      "eventTitle": "La importancia de la musica criolla",
+      "id": 13,
+      "title": "La importancia de la musica criolla",
       "eventType": 1,
-      "dateStart": "2021-07-15T17:36:03",
-      "dateEnd": "2021-07-16T17:36:03",
-      "eventDescription": "En la actualidad , la musica criolla ha perdido mucha fuerza, esto debido a la aparición de nuevos géneros. Descubriremos la importancia de preservar los ritmos originales de nuestro País, adempas de como combinarlo con ritmos modernos.",
+      "startDateTime": "2021-07-15T17:36:03",
+      "locationCountry": "peru, lima 1400",
+      "description": "En la actualidad , la musica criolla ha perdido mucha fuerza, esto debido a la aparición de nuevos géneros. Descubriremos la importancia de preservar los ritmos originales de nuestro País, adempas de como combinarlo con ritmos modernos.",
       "eventAditionalInfo": "Encuentra esta clase maestra en Vivo, comprando tus entradas en Joinnus.com",
-      "artistId": 5
+      "artistId": 5,
+      "currentStatus": "terminate"
     },
     {
-      "eventId": 17,
-      "eventTitle": "Evnto ejemplo",
+      "id": 17,
+      "title": "Evnto ejemplo",
       "eventType": 1,
-      "dateStart": "2021-06-30T00:00:00",
-      "dateEnd": "2021-07-07T00:00:00",
-      "eventDescription": "descricpion de ejemplo",
+      "startDateTime": "2021-06-30T00:00:00",
+      "locationCountry": "peru, lima 1400",
+      "description": "descricpion de ejemplo",
       "eventAditionalInfo": "",
-      "artistId": 5
+      "artistId": 5,
+      "currentStatus": "terminate"
     }
   ]
 }

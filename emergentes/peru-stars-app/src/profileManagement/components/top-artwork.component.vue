@@ -10,7 +10,7 @@
             <template #header>
               <img alt="artworkImage" :src="getImage()" style="max-height: 250px; width: 100%" />
             </template>
-            <template #title> {{ slotProps.data.artTitle }} </template>
+            <template #title>  {{ slotProps.data.artTitle }} </template>
             <template #subtitle> Card subtitle </template>
             <template #content>
               <p align="justify" class="m-0 text-sm">

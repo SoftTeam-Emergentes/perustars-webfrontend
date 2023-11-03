@@ -10,6 +10,7 @@
     <div class=" overflow-auto">
       <top-artist></top-artist>
       <top-art></top-art>
+      <top-events></top-events>
     </div>
 
   </div>
@@ -20,13 +21,14 @@
 </template>
 
 <script>
-import SideBarHobbyist from "@/profileManagement/components/side-bar-hobbyist.vue";
-import TopArtist from "@/profileManagement/components/top-artist.vue";
-import TopArt from "@/profileManagement/components/top-artwork.vue";
+import SideBarHobbyist from "@/profileManagement/components/side-bar-hobbyist.component.vue";
+import TopArtist from "@/profileManagement/components/top-artist.component.vue";
+import TopArt from "@/profileManagement/components/top-artwork.component.vue";
+import TopEvents from "@/profileManagement/components/top-events.component.vue";
 
 export default {
   name: "HomeHobbyist",
-  components: {TopArt, TopArtist, SideBarHobbyist},
+  components: {TopEvents, TopArt, TopArtist, SideBarHobbyist},
 
   data(){
     return{
