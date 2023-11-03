@@ -33,6 +33,7 @@ import Checkbox from "primevue/checkbox";
 import Sidebar from "primevue/sidebar";
 import OrderList from "primevue/orderlist";
 import Listbox from "primevue/listbox";
+import Card from "primevue/card";
 
 
 
@@ -62,6 +63,7 @@ app.component('pv-checkbox', Checkbox)
 app.component('pv-sidebar', Sidebar)
 app.component('pv-order-list', OrderList)
 app.component('pv-list-box', Listbox)
+app.component('pv-card',Card)
 
 
 
