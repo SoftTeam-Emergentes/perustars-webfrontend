@@ -1,10 +1,6 @@
 <template>
-  <!--<pv-sidebar v-model:visible="visible" :showCloseIcon="false" :modal="false"  >
-    <h2>Sidebar</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </pv-sidebar>-->
-  <div v-if="visible">
-    <div class="w-15rem  " style="height: calc(100vh - 105px )"></div>
+
+    <div class="w-15rem " style="height: calc(100vh - 105px )"></div>
     <div class=" shadow-7 w-15rem border-round-right-2xl fixed" style="height: calc(100vh - 100px );top: 99px">
         <pv-list-box v-model="selectArtist" :options="ArtistFavorites"  class="w-full " listStyle="height:calc(50vh - 110px)" data-key="id" >
           <template #header > <div class="mr-3 font-semibold border-2 border-round-right-2xl" style="background-color: #DA5B5E; color: white">
@@ -22,7 +18,6 @@
             </div>
           </template>
         </pv-list-box>
-
         <pv-list-box v-model="selectArtist" :options="ArtistFavorites"  class="w-full " listStyle="height:calc(50vh - 110px)" data-key="id" >
           <template #header > <div class="mr-3 font-semibold border-2 border-round-right-2xl" style="background-color: #DA5B5E; color: white">
             <p class="ml-3">Your artist</p>
@@ -39,10 +34,8 @@
             </div>
           </template>
         </pv-list-box>
-
-
     </div>
-  </div>
+
 
 </template>
 
@@ -51,7 +44,7 @@ export default {
   name: "side-bar-hobbyist",
   data() {
     return {
-      visible: true,
+
       selectArtist:null,
       ArtistFavorites: [
         {id: 1, name: "Juan", edad: 30, image: "https://cdn-icons-png.flaticon.com/512/3135/3135768.png"},
@@ -70,5 +63,6 @@ export default {
 </script>
 
 <style scoped>
+
 
 </style>
