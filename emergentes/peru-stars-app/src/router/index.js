@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Welcome from "@/accountManagement/views/Welcome.vue";
+import Welcome from "@/accountManagement/pages/welcome.component.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,17 +13,17 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('@/accountManagement/views/About.vue')
+      component: () => import('@/accountManagement/pages/about.component.vue')
     },
     {
       path: '/sign-in',
       name: 'sign-in',
-      component: () => import('@/accountManagement/views/SignIn.vue')
+      component: () => import('@/accountManagement/pages/sign-in.component.vue')
     },
     {
       path: '/sign-up',
       name: 'sign-up',
-      component: () => import('@/accountManagement/views/SignUp.vue')
+      component: () => import('@/accountManagement/pages/sign-up.component.vue')
     },
     {
       path: '/hobbyist',
